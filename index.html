@@ -22,23 +22,18 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Email</a></li>
-                            <li><a class="dropdown-item" href="#">Username</a></li>
-                            <li><a class="dropdown-item" href="#">Name</a></li>
-                        </ul>
+                    <li class="nav-item d-flex">
+                        <select id="dropdown" class="form-select form-select" aria-label="Small select example">
+                            <option selected>Filtra i risultati</option>
+                            <option value="Email">Email</option>
+                            <option value="Username">Username</option>
+                            <option value="Name">Name</option>
+                        </select>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <input id="myInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input id="myInput" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button id="myBtn" class="btn btn-outline-success">Search</button>
                 </div>
             </div>
@@ -50,14 +45,14 @@
             <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Name</th>
+                        <th scope="col">id</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Name</th>
                     </tr>
                 </thead>
-                <tbody  id="users">
-                    
+                <tbody id="users">
+
                 </tbody>
             </table>
 
